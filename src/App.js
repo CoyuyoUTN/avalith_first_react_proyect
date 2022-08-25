@@ -1,10 +1,9 @@
 import TukiComponents from "./Components/TukiComponents";
 
 const App = () => {
+  console.log("app");
   return (
-    <div>
-      <h1>Hola mundo!</h1>
-      <h2>Gonzalo</h2>
+    <div className="App">
       <TukiComponents />
     </div>
   );
