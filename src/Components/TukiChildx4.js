@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const TukiChildx4 = () => {
   const [animals, setAnimals] = useState(["Racoon"]);
@@ -14,9 +14,7 @@ const TukiChildx4 = () => {
     setAnimals(["Racoon"]);
   };
 
-  useEffect(() => {
-    console.log(animals);
-  });
+  console.log(animals);
 
   return (
     <div>

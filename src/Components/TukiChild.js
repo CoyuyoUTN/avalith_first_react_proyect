@@ -9,7 +9,7 @@ const TukiChild = () => {
   };
 
   const reset = () => {
-    setCount(count * 0);
+    setCount(0);
   };
 
   const decrease = () => {
