@@ -5,7 +5,7 @@ const TukiChildx4 = () => {
   const array = ["Dog", "Cat", "Pikachu", "Winne Pooh", "Patricio"];
 
   const addAnimals = () => {
-    if (animals.length < 6) {
+    if (animals.length === 1) {
       setAnimals([...animals, ...array]);
     }
   };

@@ -5,7 +5,7 @@ const TukiChildChild = () => {
   console.log(info);
 
   const changeData = () => {
-    setInfo({ name: "Gonzalo", age: 31, lastname: "Herrero" });
+    setInfo({ ...info, name: "Gonzalo", lastname: "Herrero" });
   };
 
   const changeDataDefault = () => {
