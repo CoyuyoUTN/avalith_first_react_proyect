@@ -1,20 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const TukiChildx4 = () => {
   const [animals, setAnimals] = useState(["Racoon"]);
+  const array = ["Dog", "Cat", "Pikachu", "Winne Pooh", "Patricio"];
 
   const addAnimals = () => {
-    console.clear();
-    const array = ["Dog", "Cat", "Pikachu", "Winne Pooh", "Patricio"];
-    setAnimals(["Racoon"]);
-    setAnimals((animals) => animals.concat(array));
+    if (animals.length < 6) {
+      setAnimals([...animals, ...array]);
+    }
   };
 
   const resetAnimals = () => {
-    console.clear();
     setAnimals(["Racoon"]);
   };
-  console.log(animals);
+
+  useEffect(() => {
+    console.log(animals);
+  });
+
   return (
     <div>
       <h2 className="countName"> Animals</h2>
